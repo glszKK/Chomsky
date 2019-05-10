@@ -1,0 +1,28 @@
+/*** definíciós rész ***/
+
+%{
+/* Ez a kód bemásolódik a generált C forrásba*/
+#include <stdio.h>
+int valos=0;
+%}
+
+/* Ez az opció azt mondja meg, hogy csak egy input file kerüljön beolvasásra. */
+%option noyywrap
+
+%%
+ /*** Szabályok ***/ 
+
+	
+[:digit:]+  { valos++; }
+[A-Za-z][A-Za-z0-9]*       {   /* Minden más karaktert ignorálunk. */   }
+
+%%
+/*** C kód. Ez is bemásolódik a generált C forrásba. ***/
+
+int main()
+{
+    /* Meghívjuk az elemzőt, majd kilépünk.*/
+        yylex();
+	printf("%d valós számot talált a lexer: \n",valos);
+    return 0;
+}
