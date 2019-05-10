@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+    int main ()
+    {
+      // Print string to screen.
+      printf ("Hello World\n");
+return 0;
+    }
+// C89-C99 es hiba / pipa
