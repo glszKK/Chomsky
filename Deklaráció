@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+int a; // az a egy egész
+int *b; // pointer
+int &r = a; // referencia 
+int c[5] ; // 5 elemű tömb
+int (&tr)[5] =c; //
+int *d[5]; // 5 elemű int típusú tömb
+int *h (); // a h függvény egészre mutató mutatót ad vissza
+int *(*l) (); //
+int (*v (int c)) (int a,int b);
+int (*(*z) (int)) (int,int);
+
+	return 0;
+}
