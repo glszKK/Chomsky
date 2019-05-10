@@ -1,0 +1,23 @@
+<para> 
+Szabályok: S->abc , S->aZScc , Z->aXa , Xa->aZ , Za->aabb
+</para>
+<programlisting>
+<![CDATA[
+S->aZScc->aZabccc->aaabbbccc]]>
+</programlisting>
+<para>
+2. PÉLDA
+</para>
+<para>
+Kezdő szimbólumok / változók : S, X, Y
+</para>
+<para>
+szimbólumok / konstansok : a, b, c
+</para>
+<para>
+Szabályok: S->abc, S->aXaYS, Yab->bcc , Xa->aabb
+</para>
+<programlisting>
+<![CDATA[
+S->aXaYS->aXaYabc->aXabccc->aaabbbccc]]>
+</programlisting>
