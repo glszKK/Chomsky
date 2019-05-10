@@ -1,0 +1,14 @@
+#include <stdio.h>
+	int main()
+	{
+	  int x;
+	  printf("Tizes szamrendszerbeli szam:");
+	  scanf("%d",&x);
+	  printf("\nUnaris alakja:");
+	  for(int i = 0; i < x; i++)
+	    {
+	      printf("/");
+	    }
+	  printf("\n");
+	  return 0;
+	}
